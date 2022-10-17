@@ -32,11 +32,11 @@ class Company {
             let status = '';
             try {
                 let result = await data.save();
-                heading = "congratulations!";
+                heading = "Success!";
                 message = "New Company Added Successfully!";
                 status = "success";
             } catch (error) {
-                heading = "Ooopsss..";
+                heading = "Error..";
                 message = "Something Error while stroing!";
                 status = "danger";
             }
@@ -120,7 +120,7 @@ class Company {
                                             $and: 
                                             [
                                                 {$eq: ["$companyId","$$id"] },
-                                                {$eq: ["$projectStatus","Pospond"] }
+                                                {$eq: ["$projectStatus","Pospend"] }
                                             ]
                                         } 
                                     } 

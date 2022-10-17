@@ -7,7 +7,7 @@ class BaseController {
         if(req.path === "/")
             pageTitle = "Home";
 
-        res.render('index',{content:"<h1 class='text-center'><u>Welcome In CURD APP</u></h1><h5 class='text-danger text-center'><u>Click on links mention in menubar for doing further actions.</u></h5>", pageTitle : pageTitle,alertMsg : ''})
+        res.render('index',{content:"<h3 class='text-center'><I>Quarter 3 Node Sample CRUD APP</u></h3><h5 class='text-primary text-center'><u>Click On links.</u></h5>", pageTitle : pageTitle,alertMsg : ''})
     }
     
     static SHOWVIEW(req,res,content)
